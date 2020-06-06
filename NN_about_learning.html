@@ -11,49 +11,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />    
 	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-			.emphasizedtext {
-  				font-weight: bold;
-  				color: white;
-			}
-			.codeBlock {
-				background: #F2F2F2;
-				color:black;
-				overflow:auto;
-				width:auto;
-				border:solid grey;
-				border-width: .2em .2em .2em .2em;
-				padding: .5em .6em;
-				line-height: 130%;
-				font-family: "Lucida Console", sans-serif, monospace;
-			}
-			.plot {
-				background: #F2F2F2;
-				border:solid gray;
-				border-width:.2em .2em .2em .2em;
-				padding: .5em .6em;
-				overflow:auto;
-				width:auto;
-			}
-			.codeKeyword {
-				color:#008800;
-			}
-			.codeFunction {
-				color:#0e84b5;
-			}
-			.codeGeneral {
-				color:black;
-			}
-			.codeVariable {
-				color:orange;
-			}
-			.subsectionHeader {
-				font-weight:bold;
-				color:red;
-				font-size:22px;
-				text-decoration:underline;
-			}
-		</style>
 	</head>
 	<body class="is-preload">
 
@@ -163,7 +120,7 @@
 								<figcaption>Accuracy for BIGGER model running on randomly labelled data.</figcaption></center></br>
 								</figure> 
 			
-								<p style='font-weight:bold'> <span style='color:red'>What do we learn?</span></br>
+								<p> <span class=subsectionHeader>What do we learn?</span></br>
 								Neural networks are all about reducing the difference between predicted mapping and actual mapping of the data it is being TRAINED on. The key is "data it's being trained on". If training data is generalized enough and network is suited to learn those generalized patterns, network will perform well on validation and testing datasets too, as we observe in our very first run of model on correctly labelled MNIST data. However, even if you provide the network with incorrect or randomly labelled data, given enough size and epochs to train, a neural network will achieve good accuracy on that dataset too. However due to lack of structure in the training data, the mapping network learns would not be useful on validation and training datasets!
 								</div>
 							</section>
